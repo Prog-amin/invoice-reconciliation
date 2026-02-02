@@ -1,7 +1,7 @@
 {
   "invoice_id": "INV-2024-1001",
-  "processing_timestamp": "2026-02-01T19:56:02.185732Z",
-  "processing_duration_seconds": 1.53,
+  "processing_timestamp": "2026-02-02T15:07:33.442026Z",
+  "processing_duration_seconds": 1.72,
   "document_info": {
     "filename": "Invoice_1_Baseline.pdf",
     "document_quality": "excellent"
@@ -98,16 +98,16 @@
     "recommended_action": "auto_approve",
     "risk_level": "none",
     "confidence": 0.95,
-    "agent_reasoning": "The invoice INV-2024-1001 from PharmaChem Supplies Ltd was extracted with a high confidence level of 95%, and subsequently matched to purchase order PO-2024-001 with an exact PO reference, yielding a match confidence of 98%. All 4 line items were successfully matched, and no discrepancies were found, resulting in a total variance of \u00a30.00. Given the high confidence levels in extraction and matching, and the absence of any discrepancies, the recommended action to auto approve the invoice was justified, with a confidence level of 95% and no identified risk. The excellent document quality and precise matching results supported this decision."
+    "agent_reasoning": "The invoice extraction process successfully retrieved key details from INV-2024-1001, issued by PharmaChem Supplies Ltd on 2024-01-15, with a total value of \u00a39573.00 and a high extraction confidence of 95%. The invoice was subsequently matched to PO-2024-001 with a match confidence of 98%, and all 4 line items were accurately aligned, resulting in no discrepancies. Given the precise match and zero total variance, the recommended action to auto approve the invoice was justified, with a confidence level of 95% and no identified risk. The excellent document quality and high confidence levels in the extraction and matching processes supported this decision."
   },
   "agent_execution_trace": {
     "document_intelligence_agent": {
-      "duration_ms": 927,
+      "duration_ms": 987,
       "confidence": 0.95,
       "status": "success"
     },
     "matching_agent": {
-      "duration_ms": 5,
+      "duration_ms": 15,
       "confidence": 0.98,
       "status": "success"
     },
@@ -117,7 +117,7 @@
       "status": "success"
     },
     "resolution_recommendation_agent": {
-      "duration_ms": 591,
+      "duration_ms": 707,
       "confidence": 0.95,
       "status": "success"
     }

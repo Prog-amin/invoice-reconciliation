@@ -1,8 +1,8 @@
 [
   {
     "invoice_id": "INV-2024-1001",
-    "processing_timestamp": "2026-02-01T19:56:02.185732Z",
-    "processing_duration_seconds": 1.53,
+    "processing_timestamp": "2026-02-02T15:07:33.442026Z",
+    "processing_duration_seconds": 1.72,
     "document_info": {
       "filename": "Invoice_1_Baseline.pdf",
       "document_quality": "excellent"
@@ -99,16 +99,16 @@
       "recommended_action": "auto_approve",
       "risk_level": "none",
       "confidence": 0.95,
-      "agent_reasoning": "The invoice INV-2024-1001 from PharmaChem Supplies Ltd was extracted with a high confidence level of 95%, and subsequently matched to purchase order PO-2024-001 with an exact PO reference, yielding a match confidence of 98%. All 4 line items were successfully matched, and no discrepancies were found, resulting in a total variance of \u00a30.00. Given the high confidence levels in extraction and matching, and the absence of any discrepancies, the recommended action to auto approve the invoice was justified, with a confidence level of 95% and no identified risk. The excellent document quality and precise matching results supported this decision."
+      "agent_reasoning": "The invoice extraction process successfully retrieved key details from INV-2024-1001, issued by PharmaChem Supplies Ltd on 2024-01-15, with a total value of \u00a39573.00 and a high extraction confidence of 95%. The invoice was subsequently matched to PO-2024-001 with a match confidence of 98%, and all 4 line items were accurately aligned, resulting in no discrepancies. Given the precise match and zero total variance, the recommended action to auto approve the invoice was justified, with a confidence level of 95% and no identified risk. The excellent document quality and high confidence levels in the extraction and matching processes supported this decision."
     },
     "agent_execution_trace": {
       "document_intelligence_agent": {
-        "duration_ms": 927,
+        "duration_ms": 987,
         "confidence": 0.95,
         "status": "success"
       },
       "matching_agent": {
-        "duration_ms": 5,
+        "duration_ms": 15,
         "confidence": 0.98,
         "status": "success"
       },
@@ -118,7 +118,7 @@
         "status": "success"
       },
       "resolution_recommendation_agent": {
-        "duration_ms": 591,
+        "duration_ms": 707,
         "confidence": 0.95,
         "status": "success"
       }
@@ -126,8 +126,8 @@
   },
   {
     "invoice_id": "Invoice_2_Scanned.pdf",
-    "processing_timestamp": "2026-02-01T19:56:12.090021Z",
-    "processing_duration_seconds": 9.82,
+    "processing_timestamp": "2026-02-02T15:07:42.737086Z",
+    "processing_duration_seconds": 9.21,
     "document_info": {
       "filename": "Invoice_2_Scanned.pdf",
       "document_quality": "poor"
@@ -146,7 +146,7 @@
     },
     "agent_execution_trace": {
       "document_intelligence_agent": {
-        "duration_ms": 9822,
+        "duration_ms": 9204,
         "confidence": 0.28633333333333333,
         "status": "success"
       },
@@ -162,8 +162,8 @@
   },
   {
     "invoice_id": "MC-INV-3421",
-    "processing_timestamp": "2026-02-01T19:56:13.800932Z",
-    "processing_duration_seconds": 1.63,
+    "processing_timestamp": "2026-02-02T15:07:44.415771Z",
+    "processing_duration_seconds": 1.61,
     "document_info": {
       "filename": "Invoice_3_Different_Format.pdf",
       "document_quality": "excellent"
@@ -254,11 +254,11 @@
       "recommended_action": "auto_approve",
       "risk_level": "none",
       "confidence": 0.95,
-      "agent_reasoning": "The invoice extraction process successfully retrieved the key details from invoice MC-INV-3421, with a confidence level of 95%, from MedChem Ingredients dated 2024-01-22, totaling \u00a37362.00. The extracted details were then matched to PO-2024-003 with a high match confidence of 98%, resulting in a complete match of all 4 line items and no discrepancies found. Given the high confidence levels and zero total variance, the recommended action to auto approve the invoice was justified, with a confidence level of 95% and no identified risk. The excellent document quality and precise matching results supported this decision. The invoice was therefore cleared for auto approval with no further review required."
+      "agent_reasoning": "The invoice extraction process successfully retrieved the details of invoice MC-INV-3421 from MedChem Ingredients, dated 2024-01-22, with a total value of \u00a37362.00, at a confidence level of 95%. The extracted details were then matched to PO-2024-003 with a high match confidence of 98%, resulting in a complete match of all 4 line items. As no discrepancies were found and the total variance was \u00a30.00, the invoice was deemed to be fully compliant. Therefore, the recommended action to auto approve the invoice, with a confidence level of 95% and no identified risk, was justified due to the high accuracy of the extraction and matching processes."
     },
     "agent_execution_trace": {
       "document_intelligence_agent": {
-        "duration_ms": 830,
+        "duration_ms": 816,
         "confidence": 0.95,
         "status": "success"
       },
@@ -268,12 +268,12 @@
         "status": "success"
       },
       "discrepancy_detection_agent": {
-        "duration_ms": 0,
+        "duration_ms": 1,
         "confidence": 0.99,
         "status": "success"
       },
       "resolution_recommendation_agent": {
-        "duration_ms": 785,
+        "duration_ms": 776,
         "confidence": 0.95,
         "status": "success"
       }
@@ -281,8 +281,8 @@
   },
   {
     "invoice_id": "GPS-8842",
-    "processing_timestamp": "2026-02-01T19:56:15.390048Z",
-    "processing_duration_seconds": 1.44,
+    "processing_timestamp": "2026-02-02T15:07:46.128365Z",
+    "processing_duration_seconds": 1.58,
     "document_info": {
       "filename": "Invoice_4_Price_Trap.pdf",
       "document_quality": "excellent"
@@ -394,26 +394,26 @@
       "recommended_action": "flag_for_review",
       "risk_level": "medium",
       "confidence": 0.995,
-      "agent_reasoning": "The invoice GPS-8842 from Global Pharma Supply Co. was extracted with a high confidence level of 95% and matched to PO-2024-004 with a match confidence of 98%, successfully aligning all 3 line items. However, discrepancies were identified, including a price mismatch on line item 1 and a total variance of \u00a3300.00, exceeding the tolerance threshold. These discrepancies justified the recommended action to flag the invoice for review, which was made with 100% confidence, citing a medium risk level due to the notable price increase and total variance. The excellent document quality supported the accuracy of the extraction and matching process. Overall, the decision to flag for review was based on a thorough analysis of the invoice and PO data."
+      "agent_reasoning": "The invoice GPS-8842 from Global Pharma Supply Co. was extracted with a 95% confidence level and matched to PO-2024-004 with a 98% confidence level, successfully aligning all 3 line items. However, discrepancies were identified, including a price mismatch on Line item 1 and a total variance of \u00a3300.00, exceeding the tolerance threshold. These discrepancies justified the recommended action to flag the invoice for review, which was made with 100% confidence, due to the medium risk level associated with the total variance of 2.3%. The excellent document quality and high match confidence levels supported the accuracy of the identified discrepancies."
     },
     "agent_execution_trace": {
       "document_intelligence_agent": {
-        "duration_ms": 733,
+        "duration_ms": 837,
         "confidence": 0.95,
         "status": "success"
       },
       "matching_agent": {
-        "duration_ms": 4,
+        "duration_ms": 12,
         "confidence": 0.98,
         "status": "success"
       },
       "discrepancy_detection_agent": {
-        "duration_ms": 0,
+        "duration_ms": 1,
         "confidence": 0.85,
         "status": "warning"
       },
       "resolution_recommendation_agent": {
-        "duration_ms": 691,
+        "duration_ms": 722,
         "confidence": 0.995,
         "status": "success"
       }
@@ -421,8 +421,8 @@
   },
   {
     "invoice_id": "EC-7721",
-    "processing_timestamp": "2026-02-01T19:56:17.109688Z",
-    "processing_duration_seconds": 1.64,
+    "processing_timestamp": "2026-02-02T15:07:47.613425Z",
+    "processing_duration_seconds": 1.41,
     "document_info": {
       "filename": "Invoice_5_Missing_PO.pdf",
       "document_quality": "excellent"
@@ -529,26 +529,26 @@
       "recommended_action": "flag_for_review",
       "risk_level": "medium",
       "confidence": 0.95,
-      "agent_reasoning": "The invoice EC-7721 from EuroChem Trading Ltd, dated 2024-01-28, was extracted with a 90% confidence level, and its details were matched to PO-2024-005 with a 95% confidence level, resulting in a successful match of all 4 line items. However, a discrepancy was identified as the invoice did not contain a PO reference, which was inferred through fuzzy matching. Despite a total variance of \u00a30.00, the missing PO reference warranted caution, and therefore, the invoice was flagged for review with a 95% confidence level, deemed a medium risk. This decision was justified due to the high match confidence and the need for verification of the inferred PO reference."
+      "agent_reasoning": "The invoice EC-7721 from EuroChem Trading Ltd, dated 2024-01-28, was extracted with a 90% confidence level and matched to PO-2024-005 with a 95% confidence level, successfully aligning all 4 line items. A discrepancy was identified as the invoice lacked a PO reference, although fuzzy matching suggested a strong correlation with PO-2024-005. Despite a total variance of \u00a30.00, the absence of a PO reference on the invoice warranted caution, justifying the recommended action to flag for review with a 95% confidence level. This approach ensured a thorough audit trail, given the medium risk level associated with the transaction."
     },
     "agent_execution_trace": {
       "document_intelligence_agent": {
-        "duration_ms": 842,
+        "duration_ms": 790,
         "confidence": 0.9000000000000001,
         "status": "success"
       },
       "matching_agent": {
-        "duration_ms": 9,
+        "duration_ms": 8,
         "confidence": 0.95,
         "status": "success"
       },
       "discrepancy_detection_agent": {
-        "duration_ms": 0,
+        "duration_ms": 1,
         "confidence": 0.85,
         "status": "warning"
       },
       "resolution_recommendation_agent": {
-        "duration_ms": 779,
+        "duration_ms": 605,
         "confidence": 0.95,
         "status": "success"
       }
