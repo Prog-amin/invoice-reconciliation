@@ -1,0 +1,140 @@
+{
+  "invoice_id": "GPS-8842",
+  "processing_timestamp": "2026-02-01T19:56:15.390048Z",
+  "processing_duration_seconds": 1.44,
+  "document_info": {
+    "filename": "Invoice_4_Price_Trap.pdf",
+    "document_quality": "excellent"
+  },
+  "processing_results": {
+    "extraction_confidence": 0.95,
+    "document_quality": "excellent",
+    "extracted_data": {
+      "invoice_number": "GPS-8842",
+      "invoice_date": "2024-01-25",
+      "supplier": "Global Pharma Supply Co.",
+      "supplier_vat": "GB234567890",
+      "po_reference": "PO-2024-004",
+      "payment_terms": "Net 30",
+      "currency": "GBP",
+      "line_items": [
+        {
+          "item_code": "GPS-A101",
+          "description": "Ibuprofen BP 200mg",
+          "quantity": 100.0,
+          "unit": "kg",
+          "unit_price": 88.0,
+          "line_total": 8800.0,
+          "extraction_confidence": 0.95
+        },
+        {
+          "item_code": "GPS-E045",
+          "description": "Povidone K30 USP",
+          "quantity": 75.0,
+          "unit": "kg",
+          "unit_price": 22.0,
+          "line_total": 1650.0,
+          "extraction_confidence": 0.95
+        },
+        {
+          "item_code": "GPS-E067",
+          "description": "Sodium Starch Glycolate",
+          "quantity": 40.0,
+          "unit": "kg",
+          "unit_price": 19.5,
+          "line_total": 780.0,
+          "extraction_confidence": 0.95
+        }
+      ],
+      "subtotal": 11230.0,
+      "vat_amount": 2246.0,
+      "vat_rate": 0.2,
+      "total": 13476.0
+    },
+    "matching_results": {
+      "po_match_confidence": 0.98,
+      "matched_po": "PO-2024-004",
+      "match_method": "exact_po_reference",
+      "supplier_match": true,
+      "line_items_matched": 3,
+      "line_items_total": 3,
+      "match_rate": 1.0,
+      "alternative_matches": [
+        {
+          "po_number": "PO-2024-008",
+          "supplier": "British Pharmaceutical Supply",
+          "supplier_match_score": 0.52,
+          "item_match_rate": 0.0
+        },
+        {
+          "po_number": "PO-2024-012",
+          "supplier": "Spectrum Chemical Supplies",
+          "supplier_match_score": 0.51,
+          "item_match_rate": 0.0
+        },
+        {
+          "po_number": "PO-2024-001",
+          "supplier": "PharmaChem Supplies Ltd",
+          "supplier_match_score": 0.5,
+          "item_match_rate": 0.33
+        }
+      ]
+    },
+    "discrepancies": [
+      {
+        "type": "price_mismatch",
+        "severity": "medium",
+        "field": "unit_price",
+        "details": "Line item 1 (Ibuprofen BP 200mg): Invoice unit price \u00a388.00 vs PO price \u00a380.00 (+10.0% increase).",
+        "recommended_action": "flag_for_review",
+        "confidence": 1.0,
+        "line_item_index": 0,
+        "invoice_value": 88.0,
+        "po_value": 80.0,
+        "variance_percentage": 10.0
+      },
+      {
+        "type": "total_variance",
+        "severity": "low",
+        "field": "total",
+        "details": "Total invoice amount \u00a313476.00 differs from PO total \u00a313176.00 by \u00a3300.00 (2.3%).",
+        "recommended_action": "auto_approve",
+        "confidence": 0.99,
+        "invoice_value": 13476.0,
+        "po_value": 13176.0,
+        "variance_percentage": 2.2768670309653913
+      }
+    ],
+    "total_variance": {
+      "amount": 300.0,
+      "percentage": 0.022768670309653915,
+      "within_tolerance": false
+    },
+    "recommended_action": "flag_for_review",
+    "risk_level": "medium",
+    "confidence": 0.995,
+    "agent_reasoning": "The invoice GPS-8842 from Global Pharma Supply Co. was extracted with a high confidence level of 95% and matched to PO-2024-004 with a match confidence of 98%, successfully aligning all 3 line items. However, discrepancies were identified, including a price mismatch on line item 1 and a total variance of \u00a3300.00, exceeding the tolerance threshold. These discrepancies justified the recommended action to flag the invoice for review, which was made with 100% confidence, citing a medium risk level due to the notable price increase and total variance. The excellent document quality supported the accuracy of the extraction and matching process. Overall, the decision to flag for review was based on a thorough analysis of the invoice and PO data."
+  },
+  "agent_execution_trace": {
+    "document_intelligence_agent": {
+      "duration_ms": 733,
+      "confidence": 0.95,
+      "status": "success"
+    },
+    "matching_agent": {
+      "duration_ms": 4,
+      "confidence": 0.98,
+      "status": "success"
+    },
+    "discrepancy_detection_agent": {
+      "duration_ms": 0,
+      "confidence": 0.85,
+      "status": "warning"
+    },
+    "resolution_recommendation_agent": {
+      "duration_ms": 691,
+      "confidence": 0.995,
+      "status": "success"
+    }
+  }
+}

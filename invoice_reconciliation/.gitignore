@@ -1,0 +1,35 @@
+# Environment
+.env
+.env.local
+*.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test outputs (keep sample results)
+# output/results/*.json  # Uncomment to ignore outputs
+
+# Logs
+*.log
+
+# Byte-compiled files
+*.pyc
