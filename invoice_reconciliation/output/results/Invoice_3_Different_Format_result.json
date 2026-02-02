@@ -1,7 +1,7 @@
 {
   "invoice_id": "MC-INV-3421",
-  "processing_timestamp": "2026-02-02T15:07:44.415771Z",
-  "processing_duration_seconds": 1.61,
+  "processing_timestamp": "2026-02-02T17:17:19.456572Z",
+  "processing_duration_seconds": 1.49,
   "document_info": {
     "filename": "Invoice_3_Different_Format.pdf",
     "document_quality": "excellent"
@@ -92,26 +92,26 @@
     "recommended_action": "auto_approve",
     "risk_level": "none",
     "confidence": 0.95,
-    "agent_reasoning": "The invoice extraction process successfully retrieved the details of invoice MC-INV-3421 from MedChem Ingredients, dated 2024-01-22, with a total value of \u00a37362.00, at a confidence level of 95%. The extracted details were then matched to PO-2024-003 with a high match confidence of 98%, resulting in a complete match of all 4 line items. As no discrepancies were found and the total variance was \u00a30.00, the invoice was deemed to be fully compliant. Therefore, the recommended action to auto approve the invoice, with a confidence level of 95% and no identified risk, was justified due to the high accuracy of the extraction and matching processes."
+    "agent_reasoning": "The invoice extraction process successfully retrieved the details of invoice MC-INV-3421 from MedChem Ingredients, with a high confidence level of 95%, due to the excellent document quality. The extracted details were then matched to PO-2024-003 with a match confidence of 98%, resulting in a complete match of all 4 line items. As no discrepancies were found and the total variance was \u00a30.00, the invoice was deemed to be fully compliant. Based on these findings, the recommended action to auto approve the invoice was justified, with a confidence level of 95% and no identified risk, thereby ensuring a streamlined and efficient processing of the invoice."
   },
   "agent_execution_trace": {
     "document_intelligence_agent": {
-      "duration_ms": 816,
+      "duration_ms": 780,
       "confidence": 0.95,
       "status": "success"
     },
     "matching_agent": {
-      "duration_ms": 6,
+      "duration_ms": 12,
       "confidence": 0.98,
       "status": "success"
     },
     "discrepancy_detection_agent": {
-      "duration_ms": 1,
+      "duration_ms": 0,
       "confidence": 0.99,
       "status": "success"
     },
     "resolution_recommendation_agent": {
-      "duration_ms": 776,
+      "duration_ms": 681,
       "confidence": 0.95,
       "status": "success"
     }
